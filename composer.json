@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-0": {
+            "Kollab": "kollab/src"
+        }
+    },
+    "require": {
+        "propel/propel": "2.0.*@dev",
+        "cboden/ratchet": "0.3.*",
+        "silex/silex": "~1.2",
+        "kcmerrill/events": "dev-master",
+        "kcmerrill/config": "dev-master"
+    }
+}
