@@ -1,0 +1,14 @@
+<div class="login">
+<div class="medium-logo-font white-font kollaborate-font clear-both"><b>kollab<span class="logo-or">||</span>8</b></span></div>
+<input type="text" value="" placeholder="Username, Email Address, Name ..." class="custom-font small-font" ng-model="search" ng-hide="user_found" autofocus>
+<div class="user white-bg" ng-repeat="(username, user) in users.all | filter:search | limitTo:3" ng-show="search" ng-click="foundUser(user.username)">
+    <img src="{{ user.avatar }}" class="pull-left">
+    <div class="info pull-left">
+    <div class="custom-font orange-font medium-font bolded">{{ user.name }}</div>
+    <div class="custom-font grey-font small-font"><b>{{ user.title }}</b></div>
+    <div class="custom-font grey-font small-font">{{ user.email }}</div>
+    </div>
+</div>
+<div class="custom-font white-font small-font" ng-show="user.login_failed">Login failed. Try again!</div>
+<input type="password" value="" placeholder="Your password" class="custom-font small-font" ng-show="user_found" ng-keydown="login($event)" ng-model="password" autofocus>
+</div>

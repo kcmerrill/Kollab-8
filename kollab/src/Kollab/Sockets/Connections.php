@@ -1,5 +1,5 @@
 <?php
-namespace Kollab;
+namespace Kollab\Sockets;
 
 class Connections {
     function __construct(){

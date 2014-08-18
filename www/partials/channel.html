@@ -1,0 +1,49 @@
+<div class="users pull-left orange-bg">
+    <div class="user white-bg" ng-repeat="user in channels.users.all" ng-show="channels.users.isInChannel(user.username)">
+        <img src="{{ user.avatar }}" ng-class="{offline: user.status == 'offline'}">
+    </div>
+</div>
+<div class="channel-container pull-left white-bg custom-font small-font">
+    <div class="profile-bar orange-bg" ng-controller="ProfileCtrl">
+    <div class="medium-logo-font white-font kollaborate-font pull-left"><b>kollab<span class="logo-or">||</span>8</b></span></div>
+    <div class="profile pull-right kollaborate-font orange-font">
+        <div class="avatar pull-left">
+            <img src="{{ user.current.avatar }}" class="pull-left">
+        </div>
+        <div class="info pull-left">
+            <div class="medium-font white-font" >{{ user.current.name }}</div>
+            <div class="grey-font online-status small-font custom-font"><i class="fa fa-circle green-font"></i>Online</div>
+            <div class="icons medium-font orange-font">
+                <i class="fa fa-cog"></i>
+                <i class="fa fa-pencil-square-o"></i>
+                <i class="fa fa-comments"></i>
+                <i class="fa fa-volume-up"></i>
+                <i class="fa fa-sign-out" ng-click="logout()"></i>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="content" style="height:100%;">
+        <div class="channel-navigator pull-left soft-grey-bg" style="width:25%;height:100%">
+        </div>
+        <div class="chats pull-right">
+            <div class="chat" ng-repeat="m in channels.all[channels.current.channel].messages">
+                <div class="user pull-left">
+                    <img src="{{ channels.users.avatar(m.from) }}">
+                </div>
+                <div class="text pull-left">
+                    <div class="name-date">
+                        <span class="grey-font logo-or">{{ m.from }}@{{ m.date }}</span>
+                    </div>
+                    <div>
+                    {{ m.message }}
+                    </div>
+                </div>
+            </div>
+            <div class="message">
+                <i class="fa fa-keyboard-o grey-font medium-font"></i><input type="text" class="medium-font orange-font" maxlength="" style="" ng-model="message_to_send" autocorrect="off" autocomplete="off" spellcheck="true" placeholder="Go ahead ... say it!" ng-keydown="send($event)">
+            </div>
+        </div>
+    </div>
+
+</div>

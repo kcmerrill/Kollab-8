@@ -1,0 +1,292 @@
+body, html {
+    height:100%;
+    width:100%;
+    min-width:1200px;
+    padding:0px;
+    margin:0px;
+}
+*:focus {
+    outline: 0;
+}
+
+a{
+    color:#EE8833;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.kollaborate {
+    height:100%;
+    width:100%;
+    overflow:hidden;
+}
+.kollaborate-font{
+    font-family: 'Oswald', sans-serif;
+}
+
+.custom-font{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.grey_bg{
+    background-color:#F5F5F5;
+}
+
+.soft-grey-bg{
+    background-color:#F5F5F5;
+}
+.soft-grey-font{
+    color:#F5F5F5;
+}
+
+.grey-font{
+    color:#c0c0c0;
+}
+.dark-grey-font{
+    color:#3d3c40;
+}
+
+.white-font{
+    color:white;
+}
+
+.white-bg{
+    background-color:white;
+}
+
+.orange-bg{
+    background-color:#EE8833;
+}
+
+.orange-font{
+    color:#EE8833;
+}
+
+.red-font{
+    color:red;
+}
+
+.yellow-font{
+    color:yellow;
+}
+
+.green-font{
+    color:#5BAC4B;
+}
+
+.black-font{
+    color:black;
+}
+
+.bolded{
+  font-weight:bold;
+}
+
+.pull-left {
+    float:left;
+}
+
+.pull-right{
+    float:right;
+}
+
+.small-font{
+  font-size:12px;
+}
+
+.medium-font{
+  font-size:20px;
+}
+
+.medium-logo-font{
+  font-size:30px;
+}
+.large-logo-font{
+  font-size:55px;
+}
+.large-font{
+  font-size:45px;
+}
+
+.clear-both{
+  clear:both;
+}
+.kollabor8-logo-text{
+    font-size:60px;
+    color:white;
+    padding-left:10px;
+}
+.logo-or{
+  opacity:.5;
+}
+
+.users {
+    width:100px;
+    height:100%;
+    background-color:white;
+}
+
+.login{
+    padding:20% 10px 2px 10px;
+    width:400px;
+    min-height:75px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.login input{
+  display:block;
+  width:100%;
+  font-size:10;
+  border:none;
+  padding:10px 4px 10px 4px;
+}
+
+.login .user{
+  width:100%;
+  padding:4px;
+  height:75px;
+  cursor:pointer;
+  margin-bottom:2px;
+}
+
+.login .user .info{
+    margin-top:10px;
+    padding-left:10px;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.login .user img{
+  width:75px;
+}
+
+.users {
+    width:70px;
+    overflow:auto;
+}
+
+.users::-webkit-scrollbar {
+    display: none;
+}
+
+
+.users .user {
+    width:70px;
+    height:70px;
+    cursor:pointer;
+}
+
+.users .user .offline{
+    opacity:.3;
+}
+
+.users .user .offline:hover{
+    opacity:1;
+}
+
+.users .user img{
+    height:100%;
+}
+
+.channel-container{
+    position: relative;
+    width:1120px;
+    height:100%;
+}
+
+.channel-container{
+
+}
+
+.channel-container .header{
+    height:45px;
+}
+
+.sink{
+    position:absolute;
+    bottom:46px;
+    width:100%;
+    height:55px;
+}
+
+.message{
+    position:absolute;
+    bottom:0px;
+    width:100%;
+}
+
+.message input{
+    width:60%;
+    overflow-y: hidden;
+    height: 38px;
+    padding:8px;
+    border:none;
+    background:none;
+}
+
+.message i{
+    padding-left:5px;
+}
+
+.chats {
+    width:75%;
+    height:100%;
+    margin-bottom:200px;
+    padding-bottom:200px;
+    overflow-y:auto;
+}
+
+.chats .chat{
+    width:100%;
+    clear:both;
+}
+
+.chats .chat .user{
+    width:6%;
+}
+
+.chats .chat .user img{
+    width:100%;
+}
+
+.chats .chat .text{
+    width:90%;
+    padding-left:4px;
+}
+
+.profile-bar{
+    height:45px;
+    width:100%;
+    padding-left:10px;
+}
+
+.profile-bar .profile{
+    margin-top:15px;
+    margin-right:20px;
+    height:80px;
+}
+
+.profile-bar .profile .avatar img{
+    width:80px;
+    padding-right:5px;
+}
+
+.profile-bar .profile .info .name{
+}
+
+.profile-bar .profile .info .online-status{
+    margin-top:5px;
+}
+
+.profile-bar .profile .info .online-status i{
+    padding-right:3px;
+}
+
+.profile-bar .profile .info .icons i{
+    padding-right:5px;
+    cursor:pointer;
+}

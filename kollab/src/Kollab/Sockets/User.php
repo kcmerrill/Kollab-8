@@ -1,5 +1,5 @@
 <?php
-namespace Kollab;
+namespace Kollab\Sockets;
 
 class User{
     public $connection;
@@ -12,6 +12,9 @@ class User{
         $this->connected_timestamp = time();
     }
 
+    function authenticate($name){
+        return $this->name = $name;
+    }
     function isAuthenticated(){
         return is_string($this->name);
     }
